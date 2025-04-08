@@ -1,0 +1,18 @@
+# Smithery.ai configuration
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    {}
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({
+      "command": "python",
+      "args": [
+        "mcp-server/server.py"
+      ],
+      "env": {
+        "SKYSQL_API_KEY": config.SKYSQL_API_KEY
+      }
+    })
