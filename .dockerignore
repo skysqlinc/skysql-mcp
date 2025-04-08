@@ -1,0 +1,61 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Local development
+.env
+.env.local
+.env.*.local
+
+# Docker
+Dockerfile
+docker-compose.yml
+.docker/
+
+# Documentation
+docs/
+*.md
+LICENSE
+
+# Tests
+tests/
+test/
+testing/
