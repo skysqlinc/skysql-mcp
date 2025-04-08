@@ -3,7 +3,13 @@ startCommand:
   type: stdio
   configSchema:
     # JSON Schema defining the configuration options for the MCP.
-    {}
+    type: "object"
+    properties:
+      skysqlApiKey:
+        type: "string"
+        title: "SkySQL API Key"
+        description: "Your SkySQL API key for accessing SkySQL services"
+    required: ["skysqlApiKey"]
   commandFunction:
     # A function that produces the CLI command to start the MCP on stdio.
     |-
@@ -13,6 +19,11 @@ startCommand:
         "mcp-server/server.py"
       ],
       "env": {
-        "SKYSQL_API_KEY": config.SKYSQL_API_KEY
+        "MCP_HOST": "0.0.0.0",
+        "MCP_PORT": "8000",
+        "MCP_DEBUG": "False",
+        "MCP_SECRET_KEY": "${SECRET_KEY}",
+        "MCP_API_KEYS": "${API_KEYS}",
+        "SKYSQL_API_KEY": config.skysqlApiKey
       }
     })
