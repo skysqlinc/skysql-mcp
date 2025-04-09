@@ -1,6 +1,6 @@
-# SkySQL MCP Server Test Package
+# SkySQL MCP Server
 
-This package contains everything needed to test the SkySQL MCP (Machine Control Protocol) server and client implementation.
+This package contains everything needed to setup the SkySQL MCP (Machine Control Protocol) server.
 
 ## Prerequisites
 
