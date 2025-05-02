@@ -1,6 +1,16 @@
 # SkySQL MCP Server
 
-This package contains everything needed to setup the SkySQL MCP (Machine Control Protocol) server.
+[![smithery badge](https://smithery.ai/badge/@skysqlinc/skysql-mcp)](https://smithery.ai/server/@skysqlinc/skysql-mcp)
+
+This package contains everything needed to set up the SkySQL MCP (Machine Control Protocol) server, which provides a powerful interface for managing SkySQL database instances and interacting with SkyAI Agents.
+
+## Features
+
+- Launch and manage serverless database instances
+- Interact with AI-powered database agents
+- Execute SQL queries directly on SkySQL instances
+- Manage database credentials and IP allowlists
+- List and monitor database services
 
 ## Prerequisites
 
