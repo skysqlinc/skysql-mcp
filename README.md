@@ -24,7 +24,7 @@ This package contains everything needed to set up the SkySQL MCP (Model Context 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/skysql-mcp.git
+   git clone git@github.com:skysqlinc/skysql-mcp.git
    cd skysql-mcp
    ```
 
