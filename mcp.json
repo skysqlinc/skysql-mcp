@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "skysql-mcp-server": {
+      "command": "<full-path-to>/skysql-mcp/launch.sh",
+      "args": [],
+      "env": {
+        "SKYSQL_API_KEY": "<your-skysql-api-key>"
+      }
+    }
+  }
+}

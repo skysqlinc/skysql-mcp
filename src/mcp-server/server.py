@@ -12,7 +12,7 @@ import pymysql as mysql_connector
 
 # Configure logging with both file and console handlers
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler('skysql_mcp_server.log'),
