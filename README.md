@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/skysqlinc-skysql-mcp-badge.png)](https://mseep.ai/app/skysqlinc-skysql-mcp)
+
 # SkySQL MCP Server
 
 This package contains everything needed to setup the SkySQL MCP (Machine Control Protocol) server.
