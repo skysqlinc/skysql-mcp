@@ -28,10 +28,10 @@ This package contains everything needed to set up the SkySQL MCP (Model Context 
    cd skysql-mcp
    ```
 
-2. Run the setup script:
+2. Run the installation script:
    ```bash
-   chmod +x setup.sh
-   ./setup.sh
+   chmod +x install.sh
+   ./install.sh
    ```
 
 3. Create a `.env` file in the root directory of the cloned git repository with your SkySQL API key. Obtain API key by signing up for free on [SkySQL](https://app.skysql.com).
