@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/skysqlinc-skysql-mcp-badge.png)](https://mseep.ai/app/skysqlinc-skysql-mcp)
+
 # SkySQL MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@skysqlinc/skysql-mcp)](https://smithery.ai/server/@skysqlinc/skysql-mcp)
