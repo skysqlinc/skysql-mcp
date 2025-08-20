@@ -1,5 +1,6 @@
 # SkySQL MCP Server
 
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/skysqlinc/skysql-mcp)](https://archestra.ai/mcp-catalog/skysqlinc__skysql-mcp)
 [![smithery badge](https://smithery.ai/badge/@skysqlinc/skysql-mcp)](https://smithery.ai/server/@skysqlinc/skysql-mcp)
 
 This package contains everything needed to set up the SkySQL MCP (Model Context Protocol) server, which provides a powerful interface for managing SkySQL (MySQL/MariaDB) database instances and interacting with SkyAI Agents.
