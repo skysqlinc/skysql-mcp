@@ -1,29 +1,20 @@
-# Smithery.ai configuration
+# smithery.yaml — LOCAL (stdio) distribution
 startCommand:
   type: stdio
   configSchema:
-    # JSON Schema defining the configuration options for the MCP.
-    type: "object"
+    type: object
     properties:
       skysqlApiKey:
-        type: "string"
+        type: string
         title: "SkySQL API Key"
         description: "Your SkySQL API key for accessing SkySQL services"
-    required: ["skysqlApiKey"]
-  commandFunction:
-    # A function that produces the CLI command to start the MCP on stdio.
-    |-
+    required: [skysqlApiKey]
+  commandFunction: |-
     (config) => ({
-      "command": "python",
-      "args": [
-        "mcp-server/server.py"
-      ],
-      "env": {
-        "MCP_HOST": "0.0.0.0",
-        "MCP_PORT": "8000",
-        "MCP_DEBUG": "False",
-        "MCP_SECRET_KEY": "${SECRET_KEY}",
-        "MCP_API_KEYS": "${API_KEYS}",
-        "SKYSQL_API_KEY": config.skysqlApiKey
+      command: "python",
+      args: ["mcp-server/server.py"],
+      env: {
+        MCP_DEBUG: "False",
+        SKYSQL_API_KEY: config.skysqlApiKey
       }
     })
