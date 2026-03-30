@@ -13,6 +13,10 @@ This package contains everything needed to set up the SkySQL MCP (Model Context 
 - Manage database credentials and IP allowlists
 - List and monitor database services
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/skysqlinc-skysql-mcp).
+
 ## Installation
 
 #### Prerequisites
