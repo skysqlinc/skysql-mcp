@@ -438,15 +438,15 @@ async def execute_sql(service_id: str, sql_query: str) -> str:
 # Update the main block with enhanced error handling and Windows compatibility
 if __name__ == "__main__":
     try:
-        logger.info("Starting SkySQL MCP Server...")
+        logger.info("Starting SkySQL MCP Server (stdio mode)...")
         logger.info(f"Python version: {sys.version}")
 
-            # Ensure stdin/stdout are in binary mode for Windows compatibility
+        # Ensure stdin/stdout are in binary mode for Windows compatibility
         if sys.platform == "win32":
             import msvcrt
             msvcrt.setmode(sys.stdin.fileno(), os.O_BINARY)
             msvcrt.setmode(sys.stdout.fileno(), os.O_BINARY)
-        # Run the server
+        # Run the server in stdio mode
         mcp.run()
     except Exception as e:
         logger.error(f"Error starting server: {str(e)}", exc_info=True)

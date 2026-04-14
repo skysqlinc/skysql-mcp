@@ -1,6 +1,7 @@
 # Smithery.ai configuration
 startCommand:
-  type: stdio
+  type: http
+  endpoint: /mcp
   configSchema:
     # JSON Schema defining the configuration options for the MCP.
     type: "object"
@@ -11,19 +12,16 @@ startCommand:
         description: "Your SkySQL API key for accessing SkySQL services"
     required: ["skysqlApiKey"]
   commandFunction:
-    # A function that produces the CLI command to start the MCP on stdio.
+    # A function that produces the CLI command to start the MCP on HTTP.
     |-
     (config) => ({
       "command": "python",
       "args": [
-        "mcp-server/server.py"
+        "mcp-server/server_http.py"
       ],
       "env": {
-        "MCP_HOST": "0.0.0.0",
-        "MCP_PORT": "8000",
-        "MCP_DEBUG": "False",
+        "SKYSQL_API_KEY": config.skysqlApiKey,
         "MCP_SECRET_KEY": "${SECRET_KEY}",
-        "MCP_API_KEYS": "${API_KEYS}",
-        "SKYSQL_API_KEY": config.skysqlApiKey
+        "MCP_API_KEYS": "${API_KEYS}"
       }
     })
